@@ -67,8 +67,8 @@
             Profesores
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?php echo constant('URL');?>cursos">Consultar</a></li>
-            <li><a class="dropdown-item" href="<?php echo constant('URL');?>cursos/crear">Añadir profesor</a></li>
+            <li><a class="dropdown-item" href="<?php echo constant('URL');?>profesores">Consultar</a></li>
+            <li><a class="dropdown-item" href="<?php echo constant('URL');?>profesores/crear">Añadir profesor</a></li>
             
           </ul>
         </li>
