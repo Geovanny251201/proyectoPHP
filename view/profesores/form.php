@@ -65,11 +65,25 @@
       <input type="text" required class="form-control" name="nacionalidad" id="nacionalidad" aria-describedby="helpId" placeholder="Ingrese la nacionalidad" value="<?php echo isset($this->datos->nacionalidad)? $this->datos->nacionalidad :"";?>">
     
     </div>
-    <div class="mb-3">
-      <label for="" class="form-label">Id Carreras</label>
-      <input type="text" required class="form-control" name="idCarreras" id="idCarreras" aria-describedby="helpId" placeholder="Ingrese el id de la carrera" value="<?php echo isset($this->datos->idCarreras)? $this->datos->idCarreras :"";?>">
+   
+<div class="mb-3">
+  <label for="" class="form-label">Id Carreras</label>
+  <select required class="form-control" name="idCarreras" id="idCarreras" aria-describedby="helpId">
+    <option value="" selected disabled>Seleccionar</option>
+    <?php
+    $url = "https://paginas-web-cr.com/ApiPHP/apis/ListaGrupo.php";
+    $data = file_get_contents($url);
+    $response = json_decode($data, true);
+    $carreras = $response['data'];
     
-    </div>
+    foreach ($carreras as $carrera) {
+      $nombre = $carrera['nombre'];
+      $id = $carrera['id'];
+      echo "<option value='$id'>$nombre</option>";
+    }
+    ?>
+  </select>
+</div>
     <div class="mb-3">
       <label for="" class="form-label">Usuario</label>
       <input type="text" required class="form-control" name="usuario" id="usuario" aria-describedby="helpId" placeholder="Ingrese el nombre de Usuario" value="<?php echo isset($this->datos->usuario)? $this->datos->usuario :"";?>">

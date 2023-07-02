@@ -12,6 +12,6 @@
       <small id="helpId" class="form-text text-muted">Nombre Grupo</small>
     </div>
     <div class="mb-3">
-            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
       </div>
     

@@ -52,7 +52,7 @@
                                     <td>'.$datos->apellidopaterno.'</td>
                                     <td>'.$datos->apellidomaterno.'</td>
                                     <td>'.$datos->nacionalidad.'</td>
-                                    <td>'.$datos->idCarreras.'</td>
+                                    <td>'.$datos->idcarreras.'</td>
                                     <td>'.$datos->usuario.'</td>
                                     <td>
                                     <a name="eliminar" id="eliminar" class="btn btn-danger" href="'.constant('URL').'profesores/eliminarProfesores/'.$datos->id.'" role="button">Eliminar</a>

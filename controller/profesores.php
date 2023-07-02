@@ -52,7 +52,7 @@ class Profesores extends Controller{
         $datos=$this->model->verProfesores($id);
        
         $this->view->datos = $datos;
-        $this->view->mensaje = "Detalle Curso";
+        $this->view->mensaje = "Detalle Profesores";
         $this->view->render('profesores/detalle');
 
 
