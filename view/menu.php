@@ -77,8 +77,8 @@
             Grupos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?php echo constant('URL');?>cursos">Consultar</a></li>
-            <li><a class="dropdown-item" href="<?php echo constant('URL');?>cursos/crear">Crear grupo</a></li>
+            <li><a class="dropdown-item" href="<?php echo constant('URL');?>grupos">Consultar</a></li>
+            <li><a class="dropdown-item" href="<?php echo constant('URL');?>grupos/crear">Crear grupo</a></li>
             
           </ul>
         </li>
